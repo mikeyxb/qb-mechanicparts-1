@@ -159,7 +159,25 @@ Config.Peds = {
 	invincible = true,
 	blockevents = true,
     scenario = "WORLD_HUMAN_CLIPBOARD",
-},```
+}
+Config.TargetModels = {
+--tuner shop
+	["mechanic"] = {
+        models = {
+			's_m_y_xmech_01'
+		},
+        options = {
+            {
+                type = "client",
+                event = "qb-shops:marketshop",
+                icon = "fad fa-key",
+                label = "Vehicle Shop",
+                job = "mechanic",
+            },
+        },
+        distance = 3.0
+    },
+}
 
 ```
 Then, lastly:
@@ -351,6 +369,7 @@ Then, lastly:
         },
     },
 ```
+	
 ```
         ["tunershop"] = {
         ["label"] = "Tuner Shop",
